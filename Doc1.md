@@ -34,6 +34,8 @@ Resources
 
 ![GITHUB](https://github.com/MarkChang-Core/Query-Azure-Resource-For-Migration-Assessment/blob/main/image/image4.jpg)<br>
 
-Step 5. 完成Query後，請將「Formatted results」切換為「off」後，點選「Download as CSV」，將匯出之 .csv 檔案提供給予CSP後，即可評估是否可進行遷移。
+Step 5. 完成Query後，請將「格式化結果(Formatted results)」切換為「關閉(off)」後，點選「Download as CSV」 -
 
 ![GITHUB](https://github.com/MarkChang-Core/Query-Azure-Resource-For-Migration-Assessment/blob/main/image/image5.jpg)<br>
+
+最後，將匯出之 .csv 檔案提供給予CSP，即可協助進行資源跨訂閱遷移的評估，當然也可以透過Microsoft提供的[移動資源清單](https://docs.microsoft.com/zh-tw/azure/azure-resource-manager/management/move-support-resources)進行評估。

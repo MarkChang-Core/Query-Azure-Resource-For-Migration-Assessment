@@ -34,7 +34,7 @@ Resources
 
 ![GITHUB](https://github.com/MarkChang-Core/Query-Azure-Resource-For-Migration-Assessment/blob/main/image/image4.jpg)<br>
 
-Step 5. 完成Query後，請將「格式化結果(Formatted results)」切換為「關閉(off)」後，點選「Download as CSV」 -
+Step 5. 完成Query後，請將「格式化結果(Formatted results)」切換為「關閉(off)」後，點選「下載為CSV(Download as CSV)」 -
 
 ![GITHUB](https://github.com/MarkChang-Core/Query-Azure-Resource-For-Migration-Assessment/blob/main/image/image5.jpg)<br>
 

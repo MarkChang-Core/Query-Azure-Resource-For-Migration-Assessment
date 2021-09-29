@@ -8,26 +8,21 @@
 
 Step 1. 登入Azure Portal後，選擇當前訂用帳戶 – 
 
-![GITHUB](https://github.com/MarkChang-Core/AADC/blob/main/image2/image1.jpg)<br>
+![GITHUB](https://github.com/MarkChang-Core/Query-Azure-Resource-For-Migration-Assessment/blob/main/image/image1.jpg)<br>
 
 Step 2. 點擊當前需要移轉的訂用帳戶 – 
 
-![GITHUB](https://github.com/MarkChang-Core/AADC/blob/main/image2/image1.jpg)<br>
+![GITHUB](https://github.com/MarkChang-Core/Query-Azure-Resource-For-Migration-Assessment/blob/main/image/image2.jpg)<br>
 
-Step 3. 選擇導覽列中的 設定(Setting) > 資源(Resource) –
+Step 3. 選擇導覽列中的 設定(Setting) > 資源(Resource)，並選擇上方的「建立查詢(Open query)」 – 
 
-![GITHUB](https://github.com/MarkChang-Core/AADC/blob/main/image2/image1.jpg)<br>
+![GITHUB](https://github.com/MarkChang-Core/Query-Azure-Resource-For-Migration-Assessment/blob/main/image/image3.jpg)<br>
 
-Step 4. 選擇上方的 建立查詢(Open query) – 
-
-![GITHUB](https://github.com/MarkChang-Core/AADC/blob/main/image2/image1.jpg)<br>
-
-Step 5. 於Query KQL指令中輸以下指令，並執行 執行查詢(Run query) –
+Step 4. 於Query KQL指令中輸以下指令，並執行 執行查詢(Run query) –
 
 ```
 Resources
-| where subscriptionId =~ "your subscription account ID"
-| extend name = properties.osProfile.computerName
+| where subscriptionId =~ "c71720d7-af16-48de-98e7-ffbcf15c7861"
 | extend publisher = properties.storageProfile.imageReference.publisher
 | extend offer = properties.storageProfile.imageReference.offer
 | extend sku = properties.storageProfile.imageReference.sku
@@ -37,8 +32,8 @@ Resources
 ※ 其中 subscriptionId 請更換為當前之訂用帳戶ID
 ※ Query過程中，若畫面凍結無法繼續時，請重新整理後，再次輸入以下指令
 
-![GITHUB](https://github.com/MarkChang-Core/AADC/blob/main/image2/image1.jpg)<br>
+![GITHUB](https://github.com/MarkChang-Core/Query-Azure-Resource-For-Migration-Assessment/blob/main/image/image4.jpg)<br>
 
-Step 6. 完成Query後，請將「Formatted results」切換為「off」後，點選「Download as CSV」，將匯出之 .csv 檔案提供給予CSP後，即可評估是否可進行遷移。
+Step 5. 完成Query後，請將「Formatted results」切換為「off」後，點選「Download as CSV」，將匯出之 .csv 檔案提供給予CSP後，即可評估是否可進行遷移。
 
-![GITHUB](https://github.com/MarkChang-Core/AADC/blob/main/image2/image1.jpg)<br>
+![GITHUB](https://github.com/MarkChang-Core/Query-Azure-Resource-For-Migration-Assessment/blob/main/image/image5.jpg)<br>

@@ -25,8 +25,8 @@ Resources
 | where subscriptionId =~ "c71720d7-af16-48de-98e7-ffbcf15c7861"
 | extend publisher = properties.storageProfile.imageReference.publisher
 | extend offer = properties.storageProfile.imageReference.offer
-| extend sku = properties.storageProfile.imageReference.sku
-| project type, name, publisher, offer, sku
+| extend image = properties.storageProfile.imageReference.sku
+| project type, name, publisher, offer, image, sku
 ```
 
 ※ 其中 subscriptionId 請更換為當前之訂用帳戶ID

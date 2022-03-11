@@ -22,11 +22,10 @@ Step 4. 於Query KQL指令中輸以下指令，並執行 執行查詢(Run query)
 
 ```
 Resources
-| where subscriptionId =~ "c71720d7-af16-48de-98e7-ffbcf15c7861"
-| extend publisher = properties.storageProfile.imageReference.publisher
+| where subscriptionId =~ "your subscription account ID"
 | extend offer = properties.storageProfile.imageReference.offer
 | extend image_sku = properties.storageProfile.imageReference.sku
-| project type, name, publisher, offer, image_sku, sku
+| project type,name,sku,offer,image_sku,properties
 ```
 
 ※ 其中 subscriptionId 請更換為當前之訂用帳戶ID

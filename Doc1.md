@@ -28,8 +28,8 @@ Resources
 | project type,name,sku,offer,image_sku,properties
 ```
 
-※ 其中 subscriptionId 請更換為當前之訂用帳戶ID
-※ Query過程中，若畫面凍結無法繼續時，請重新整理後，再次輸入以下指令
+※ 其中 subscriptionId 請更換為當前之訂用帳戶ID <br>
+※ Query過程中，若畫面凍結無法繼續時，請重新整理後，再次輸入以下指令<br>
 
 ![GITHUB](https://github.com/MarkChang-Core/Query-Azure-Resource-For-Migration-Assessment/blob/main/image/image4.jpg)<br>
 
